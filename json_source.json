@@ -1,4 +1,5 @@
-    {
+  [
+      {
         "type": "Artifact",
         "location": "InputArtif\\Bsc",
         "url": "https:kji/jije/",
@@ -9,4 +10,5 @@
         "location": "InputArtif\\PlantModel",
         "url": "http://jiejra/34lj3./44",
         "version": "4.34.09.0"
-    },
+    }
+  ]
