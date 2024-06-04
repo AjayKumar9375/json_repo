@@ -21,8 +21,7 @@ class JsonReader:
             return []
 
     def search_and_dump_data(self, locations1, location2):
-        if not isinstance(location1, location2, list):
-            locations = [location1, location2]
+        locations = [location1, location2]
         isFound = False
         for location in locations:
             for dataset in self.origin_data:
