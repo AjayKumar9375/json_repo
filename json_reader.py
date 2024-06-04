@@ -6,10 +6,13 @@ class JsonReader:
         self.destination_path = destination_path
 
     def _load_json(self, filename):
-        with open(filename, "r") as file:
-            data = json.load(file)
-        file.close()
-        return data
+        try:
+            with open(filename, "r") as file:
+                data = json.load(file)
+            file.close()
+            return data
+        except json.JSONDecodeError as e:
+            print(f"Error parsing JSON: {e}")
 
     def search_and_dump_data(self, location):
         isFound = False
