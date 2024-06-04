@@ -13,7 +13,6 @@ def parse_input_arguments():
 
 if __name__ == "__main__":
     configuration = parse_input_arguments()
-    # location_to_be_searched = "InputArtif\\PlantModel"
     json_reader = JsonReader(configuration.path_to_source_json_file, configuration.path_to_destination_json_file)
     print(f"\n {json_reader.search_and_dump_data(configuration.location_to_be_searched)}")
     print(configuration.location_to_be_searched)
