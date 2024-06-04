@@ -23,7 +23,7 @@ if __name__ == "__main__":
     configuration = parse_input_arguments()
     json_reader = JsonReader(configuration.path_to_source_json_file, configuration.path_to_destination_json_file)
     print(f"\n {json_reader.search_and_dump_data(configuration.location1, configuration.location2)}")
-    for location in location_to_be_searched:
+    for location in configuration.location_to_be_searched:
         print(f"\n {json_reader.search_and_dump_data(location)}")
     print(configuration.location_to_be_searched)
 
