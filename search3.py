@@ -1,5 +1,5 @@
 import argparse
-from search4 import JsonReader
+from json_reader import JsonReader
 
 def parse_input_arguments():
     parser = argparse.ArgumentParser(description="inputs for script")
