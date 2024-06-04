@@ -20,7 +20,7 @@ class JsonReader:
             print(f"An error occurred while loading the file {filename}: {e}")
             return []
 
-    def search_and_dump_data(self, locations1, location2):
+    def search_and_dump_data(self, location1, location2):
         locations = [location1, location2]
         isFound = False
         for location in locations:
