@@ -14,7 +14,7 @@ def parse_input_arguments():
     
     args = parser.parse_args()
 
-    location_to_be_searched = [args.location1,args.location2]
+    # location_to_be_searched = [args.location1,args.location2]
 
     return args
 
@@ -22,6 +22,6 @@ def parse_input_arguments():
 if __name__ == "__main__":
     configuration = parse_input_arguments()
     json_reader = JsonReader(configuration.path_to_source_json_file, configuration.path_to_destination_json_file)
-    print(f"\n {json_reader.search_and_dump_data(configuration.location_to_be_searched)}")
+    print(f"\n {json_reader.search_and_dump_data(configuration.location1, configuraiot.location2)}")
     print(configuration.location_to_be_searched)
 
