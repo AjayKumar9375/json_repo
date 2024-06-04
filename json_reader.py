@@ -1,6 +1,5 @@
 import json
 
-
 class JsonReader:
     def __init__(self, origin_path, destination_path):
         self.origin_data = self._load_json(origin_path)
