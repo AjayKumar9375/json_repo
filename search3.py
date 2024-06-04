@@ -9,7 +9,7 @@ def parse_input_arguments():
     parser.add_argument("--location2", type=str, help="Provide the location to be searched in json file.", required=True)
     
     args = parser.parse_args()
-    locations = [ arge.location1, arge.location2 ]
+    locations = [ args.location1, args.location2 ]
     return args
 
 
