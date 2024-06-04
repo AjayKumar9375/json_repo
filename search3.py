@@ -14,6 +14,8 @@ def parse_input_arguments():
     
     args = parser.parse_args()
 
+    location_to_be_searched = [args.location1,args.location2]
+
     return args
 
 
