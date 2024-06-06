@@ -10,5 +10,35 @@
         "location": "InputA\\PlantModel",
         "url": "http://jiejra/34lj3./44",
         "version": "4.34.09.0"
+    },
+        {
+        "type": "Afact",
+        "location": "InputA\\L3",
+        "url": "http://jiejra/34lj3./44",
+        "version": "4.34.09.0"
+    },
+        {
+        "type": "Afact",
+        "location": "InputA\\L1",
+        "url": "http://jiejra/34lj3./44",
+        "version": "4.34.09.0"
+    },
+        {
+        "type": "Afact",
+        "location": "InputA\\dSpaceBsc",
+        "url": "http://jiejra/34lj3./44",
+        "version": "4.34.09.0"
+    },
+        {
+        "type": "Afact",
+        "location": "InputA\\plantModel",
+        "url": "http://jiejra/34lj3./44",
+        "version": "4.34.09.0"
+    },
+        {
+        "type": "Afact",
+        "location": "InputA\\bsc",
+        "url": "http://jiejra/34lj3./44",
+        "version": "4.34.09.0"
     }
   ]
