@@ -10,7 +10,7 @@ def parse_input_arguments():
     args = parser.parse_args()
     return args
 
-# This is function  
+# This is function   
 if __name__ == "__main__":
     configuration = parse_input_arguments()
     json_reader = JsonReader(configuration.path_to_source_json_file, configuration.path_to_destination_json_file)
