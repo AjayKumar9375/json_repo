@@ -1,7 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 
 import DslTesting.DslBuildStep.*
-package DslTesting.buildTypes.DslTesting_BuildTypes
+import DslTesting.buildTypes.DslTesting_BuildTypes
 
 import jetbrains.buildServer.configs.kotlin.buildFeatures.perfmon
 import jetbrains.buildServer.configs.kotlin.buildSteps.python
