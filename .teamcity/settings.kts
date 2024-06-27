@@ -35,7 +35,7 @@ version = "2024.03"
 project {
 
     vcsRoot(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain1)
-    // vcsRoot(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain)
+    vcsRoot(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain)
 
     // buildType(Feature1)
     // buildType(Feature2_2)
@@ -103,9 +103,9 @@ object HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain : GitVcsRoot({
     branchSpec = "refs/heads/*"
 })
 
-// object HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain1 : GitVcsRoot({
-//     name = "https://github.com/AjayKumar9375/json_repo.git#refs/heads/main (1)"
-//     url = "https://github.com/AjayKumar9375/json_repo.git"
-//     branch = "refs/heads/main"
-//     branchSpec = "refs/heads/*"
-// })
+object HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain1 : GitVcsRoot({
+    name = "https://github.com/AjayKumar9375/json_repo.git#refs/heads/main (1)"
+    url = "https://github.com/AjayKumar9375/json_repo.git"
+    branch = "refs/heads/main"
+    branchSpec = "refs/heads/*"
+})
