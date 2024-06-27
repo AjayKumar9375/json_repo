@@ -35,7 +35,7 @@ class DslTesting_BuildTypes(
 
 
     vcs {
-        root(DslTesting.vcsRoots.DslTesting_HttpsGithubComAjayKumar9375dslTestingGitRefsHeadsMain)
+        root(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain)
     }
 
 
