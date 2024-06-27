@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 
 import DslTesting.DslBuildStep.*
+package DslTesting.buildTypes.DslTesting_BuildTypes
 
 import jetbrains.buildServer.configs.kotlin.buildFeatures.perfmon
 import jetbrains.buildServer.configs.kotlin.buildSteps.python
@@ -36,55 +37,64 @@ project {
     vcsRoot(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain1)
     vcsRoot(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain)
 
-    buildType(Feature1)
-    buildType(Feature2_2)
+    // buildType(Feature1)
+    // buildType(Feature2_2)
+
+    // for loop
+    for ((name, description) in featuresList) {
+        buildType(DslTesting_BuildTypes(
+                name,
+                description,
+                "json_destination.json"
+        ))
+    }
 }
 
-object Feature1 : BuildType({
-    name = "feature1"
+// object Feature1 : BuildType({
+//     name = "feature1"
 
-    artifactRules = "json_destination.json"
+//     artifactRules = "json_destination.json"
 
-    vcs {
-        root(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain)
-    }
+//     vcs {
+//         root(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain)
+//     }
 
-    steps {
-        pythonScrip()
-    }
+//     steps {
+//         pythonScrip()
+//     }
 
-    triggers {
-        vcs {
-        }
-    }
+//     triggers {
+//         vcs {
+//         }
+//     }
 
-    features {
-        perfmon {
-        }
-    }
-})
+//     features {
+//         perfmon {
+//         }
+//     }
+// })
 
-object Feature2_2 : BuildType({
-    name = "feature2"
+// object Feature2_2 : BuildType({
+//     name = "feature2"
 
-    vcs {
-        root(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain1)
-    }
+//     vcs {
+//         root(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain1)
+//     }
 
-    steps {
-        pythonScrip()
-    }
+//     steps {
+//         pythonScrip()
+//     }
 
-    triggers {
-        vcs {
-        }
-    }
+//     triggers {
+//         vcs {
+//         }
+//     }
 
-    features {
-        perfmon {
-        }
-    }
-})
+//     features {
+//         perfmon {
+//         }
+//     }
+// })
 
 object HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain : GitVcsRoot({
     name = "https://github.com/AjayKumar9375/json_repo.git#refs/heads/main"
