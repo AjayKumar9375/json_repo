@@ -2,7 +2,7 @@ package DslTesting.buildTypes
 
 
 import DslTesting.DslBuildStep.*
-
+import vcs.*
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildSteps.python
 import jetbrains.buildServer.configs.kotlin.failureConditions.BuildFailureOnText
@@ -66,9 +66,9 @@ class DslTesting_BuildTypes(
 
 })
 
-object HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain : GitVcsRoot({
-    name = "https://github.com/AjayKumar9375/json_repo.git#refs/heads/main"
-    url = "https://github.com/AjayKumar9375/json_repo.git"
-    branch = "refs/heads/main"
-    branchSpec = "refs/heads/*"
-})
+// object HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain : GitVcsRoot({
+//     name = "https://github.com/AjayKumar9375/json_repo.git#refs/heads/main"
+//     url = "https://github.com/AjayKumar9375/json_repo.git"
+//     branch = "refs/heads/main"
+//     branchSpec = "refs/heads/*"
+// })
