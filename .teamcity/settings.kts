@@ -2,7 +2,7 @@ import jetbrains.buildServer.configs.kotlin.*
 
 import DslTesting.DslBuildStep.*
 import DslTesting.buildTypes.DslTesting_BuildTypes
-import vcs.*
+import vcs.vcsRoot.*
 
 import jetbrains.buildServer.configs.kotlin.buildFeatures.perfmon
 import jetbrains.buildServer.configs.kotlin.buildSteps.python
