@@ -1,4 +1,4 @@
-package vcs.vcsSetting
+package vcs
 
 import jetbrains.buildServer.configs.kotlin.BuildType
 import jetbrains.buildServer.configs.kotlin.RelativeId

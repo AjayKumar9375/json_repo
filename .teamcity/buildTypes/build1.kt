@@ -2,7 +2,7 @@ package DslTesting.buildTypes
 
 
 import DslTesting.DslBuildStep.*
-import vcs.*
+import vcs.vcsSetting
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildSteps.python
 import jetbrains.buildServer.configs.kotlin.failureConditions.BuildFailureOnText
