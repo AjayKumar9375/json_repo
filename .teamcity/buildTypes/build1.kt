@@ -33,11 +33,6 @@ class DslTesting_BuildTypes(
         param("source", "json_source.json")
     }
 
-
-
-    // vcs {
-    //     root(HttpsGithubComAjayKumar9375jsonRepoGitRefsHeadsMain)
-    // }
     vcsSetting()
 
 
